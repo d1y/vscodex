@@ -1,0 +1,99 @@
+[
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.navigateDown"
+  },
+	// commit
+	{
+		"key": "ctrl+enter",
+		"command": "git.commitMessageAccept",
+		"when": "editorFocus && !isInDiffEditor && resourceDirname =~ /.git$/ && resourceFilename == COMMIT_EDITMSG"
+	},
+  // -------------------------
+  {
+    "key": "alt+n",
+    "command": "workbench.action.compareEditor.nextChange",
+    "when": "editorTextFocus && !suggestWidgetVisible && textCompareEditorActive"
+  },
+  {
+    "key": "alt+shift+n",
+    "command": "workbench.action.compareEditor.previousChange",
+    "when": "editorTextFocus && !suggestWidgetVisible && textCompareEditorActive"
+  },
+  {
+    "key": "alt+n",
+    "command": "workbench.action.editor.nextChange",
+    "when": "editorTextFocus && !suggestWidgetVisible && !textCompareEditorActive"
+  },
+  {
+    "key": "alt+shift+n",
+    "command": "workbench.action.editor.previousChange",
+    "when": "editorTextFocus && !suggestWidgetVisible && !textCompareEditorActive"
+  },
+  // -------------------------
+
+  // -------------------------
+	// 资源管理器中对文件或目录的操作
+  // https://github.com/Yuhao-Luo/DotFiles/blob/main/keybindings.json
+	// -------------------------
+	// 新建文件
+	{
+		"key": "a",
+		"command": "explorer.newFile",
+		"when": " explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus "
+	},
+	// 新建目录
+	{
+		"key": "o",
+		"command": "explorer.newFolder",
+		"when": " explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus "
+	},
+	// 刷新资源管理器
+	// {
+	// 	"key": "a",
+	// 	"command": "workbench.files.action.refreshFilesExplorer",
+	// 	"when": " explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus "
+	// },
+	// 重命名文件或目录
+	{
+		"key": "r",
+		"command": "renameFile",
+		"when": " explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus "
+	},
+	// 删除文件或目录
+	{
+		"key": "d",
+		"command": "deleteFile",
+		"when": " explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus "
+	},
+	// 剪切文件或目录
+	{
+		"key": "x",
+		"command": "filesExplorer.cut",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
+	// 复制文件或目录
+	{
+		"key": "y",
+		"command": "filesExplorer.copy",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+	// 粘贴文件或目录
+	{
+		"key": "p",
+		"command": "filesExplorer.paste",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	}
+]

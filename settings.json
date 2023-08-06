@@ -1,0 +1,594 @@
+{
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "editor.colorDecorators": false,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.startupEditor": "newUntitledFile",
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "files.associations": {
+    "*.wxml": "html",
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript"
+  },
+  "emmet.includeLanguages": {
+    "wxml": "html"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.ignoreLegacyWarning": true,
+  "editor.suggestSelection": "first",
+  "breadcrumbs.enabled": false,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.quickSuggestions": {
+    "strings": true,
+    "other": true,
+    "comments": true
+  },
+  "screencastMode.fontSize": 20,
+  "screencastMode.verticalOffset": 0,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[dart]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false,
+    "editor.tabSize": 2
+  },
+  "workbench.editor.tabCloseButton": "left",
+  "screencastMode.mouseIndicatorColor": "#fff",
+  "editor.largeFileOptimizations": false,
+  "editor.fontFamily": "'Fragment Mono', 'Monaco Nerd Font','JetBrains Mono', 'SF Mono', 'Optica Mono', Consolas, JetBrainsMono Nerd Font, LXGW WenKai, input, 'Cascadia Code'",
+  "workbench.editor.untitled.hint": "hidden",
+  "security.workspace.trust.untrustedFiles": "open",
+  "remote.autoForwardPorts": false,
+  "terminal.integrated.profiles.osx": {
+    "/usr/local/bin/fish (migrated)": {
+      "path": "/usr/local/bin/fish",
+      "args": [
+        "-l"
+      ]
+    }
+  },
+  "terminal.integrated.env.windows": {},
+  "editor.fontLigatures": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.semanticHighlighting.enabled": false,
+  "workbench.editor.showIcons": true,
+  "screencastMode.mouseIndicatorSize": 88,
+  "editor.suggest.preview": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "dart.debugExternalPackageLibraries": true,
+  "dart.debugSdkLibraries": false,
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.external.windowsExec": "D:\\cygwin\\bin\\bash.exe",
+  "editor.fontWeight": "normal",
+  "terminal.integrated.cursorBlinking": true,
+  "editor.inlineSuggest.enabled": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.scrollToSwitchTabs": true,
+
+  // vim config
+  // https://github.com/AnthonyAsDev/VSCodeKeyboardProductivity
+  "vim.autoSwitchInputMethod.enable": false,
+  "vim.easymotion": true,
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-n>": false
+  },
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "g", "s"],
+      "commands": ["git.stageSelectedRanges"]
+    },
+    {
+      "before": ["<leader>", "g", "u"],
+      "commands": ["git.unstageSelectedRanges"]
+    },
+    {
+			"before": ["<Leader>", "a"],
+			"commands": ["editor.action.quickFix"]
+		},
+    {
+			"before": ["<Leader>", "f"],
+			"commands": ["editor.action.formatSelection"]
+		},
+    // {
+		// 	"before": ["<Leader>", "i"],
+		// 	"commands": ["workbench.action.toggleEditorWidths"]
+		// },
+    {
+			"before": ["J"],
+			"commands": ["editor.action.moveLinesDownAction"]
+		},
+		{
+			"before": ["K"],
+			"commands": ["editor.action.moveLinesUpAction"]
+		},
+    // TODO: add this
+    // {
+    //   "before": ["<leader>", "/"],
+    // },
+    // reset current selected chunk
+    {
+      "before": ["<leader>", "r", "h"],
+      "commands": [ "git.revertSelectedRanges" ]
+    },
+    {
+      "before": [
+        ">"
+      ],
+      "commands": [
+        "editor.action.indentLines"
+      ]
+    },
+    {
+      "before": [
+        "<"
+      ],
+      "commands": [
+        "editor.action.outdentLines"
+      ]
+    },
+    {
+      "before": [
+        "enter"
+      ],
+      "after": [
+        "a",
+        "f"
+      ]
+    }
+  ],
+  // all vscode keys https://github.com/gwk/gloss/blob/2d8e62decd294679ad77a8c9270c38178ed8cab0/vscode/keys.txt#L1593
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "<leader>", "g"],
+      "commands": ["git-graph.view"]
+    },
+    {
+      "before": ["<leader>", "g", "g"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
+      "before": ["<leader>", "p"],
+      "commands": ["workbench.action.showCommands"],
+      "silent": true
+    },
+    {
+      "before": [";"],
+      "commands": ["workbench.action.quickOpen" /* openRecent */ ],
+      "silent": true
+    },
+    {
+      "before": ["<leader>", "g", "s"],
+      "commands": ["git.stageSelectedRanges"]
+    },
+    {
+      "before": ["<leader>", "g", "u"],
+      "commands": ["git.unstageSelectedRanges"]
+    },
+    {
+      "before": ["<leader>", "g", "c"],
+      "commands": ["git.commit"]
+    },
+    // https://github.com/SuperPaintman/dotfiles/blob/57484e960e4505e0f486f9134680977bb643fa2f/vim/.vimrc#L889C47-L889C67
+    {
+      "before": ["<leader>", "r", "h"],
+      "commands": [ "git.revertSelectedRanges" ]
+    },
+    {
+      "before": ["g", "N"],
+      "commands": [
+         //  "editor.action.dirtydiff.previous"
+         "workbench.action.editor.previousChange",
+         "extension.vim_escape"
+       ]
+    },
+    {
+      "before": ["g", "n"],
+      "commands": [
+        // "editor.action.dirtydiff.next",
+        "workbench.action.editor.nextChange",
+         "extension.vim_escape"
+      ]
+    },
+    /* opens settings json  */
+    {
+      "before": ["<leader>", "e", "s"],
+      "commands": ["workbench.action.openSettingsJson"],
+      "silent": true
+    },
+    {
+      "before": ["-"],
+      "commands": ["vsnetrw.open"],
+      "when": "editorLangId != vsnetrw"
+    },    
+    // 放大当前
+    {
+      "before": ["<Leader>", ";"],
+      // "before": ["<Leader>", "v", "i", "i"],
+      "commands": ["workbench.action.increaseViewSize"]
+    },
+    // 缩放当前
+    {
+      "before": ["<Leader>", "'"],
+      // "before": ["<Leader>", "v", "d", "d"],
+      "commands": ["workbench.action.decreaseViewSize"]
+    },
+    {
+      "before": [
+        "enter"
+      ],
+      "after": [
+        "v",
+        "a",
+        "f"
+      ]
+    },
+    // 显示左侧
+    {
+      "before": [
+        "<Leader>",
+        "n"
+      ],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "i"
+      ],
+      "commands": [
+        "workbench.action.toggleEditorWidths"
+      ]
+    },
+    // 打开命令
+    {
+      "before": [
+        "<Leader>",
+        "p"
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ]
+    },
+    // 格式化文档
+    {
+      "before": [
+        "<Leader>",
+        "f",
+        "d"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ]
+    },
+    // 关闭文件
+    {
+      "before": [
+        "<Leader>",
+        "q"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    // 保存文件
+    {
+      "before": [
+        "<Leader>",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
+    },
+    // 修改符号名
+    {
+      "before": [
+        "<Leader>",
+        "r",
+        "s"
+      ],
+      "commands": [
+        "editor.action.rename"
+      ]
+    },
+    // 上一个文件(tab)
+    {
+      "before": [
+        "<Leader>",
+        "H"
+      ],
+      "commands": [
+        "workbench.action.nextEditor"
+      ]
+    },
+    // 下一个文件(tab)
+    {
+      "before": [
+        "<Leader>",
+        "G"
+      ],
+      "commands": [
+        "workbench.action.previousEditor"
+      ]
+    },
+    // 删除除当前文件之外的tab
+    // {
+    //   "before": ["<Leader>","w","o"],
+    //   "commands": [":tabo"]
+    // },
+    {
+      // 打开终端
+      "before": [
+        "<leader>",
+        "t"
+      ],
+      "commands": [
+        "workbench.action.terminal.toggleTerminal"
+      ]
+    },
+    // 下方(分屏)打开文件
+    {
+      "before": [
+        "<Leader>",
+        "w",
+        "j"
+      ],
+      "commands": [
+        "workbench.action.splitEditorDown"
+      ]
+    },
+    {
+      "before": ["<Leader>", "w", "k"],
+      "commands": ["workbench.action.splitEditorUp"]
+    },
+    // 侧边(分屏)打开文件
+    {
+      "before": [
+        "<Leader>",
+        "w",
+        "l"
+      ],
+      "commands": [
+        "workbench.action.splitEditorRight"
+      ]
+    },
+    {
+      "before": ["<Leader>", "m", "n"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<Leader>", "m", "N"],
+      "commands": ["editor.action.marker.prev"]
+    }
+  ],
+
+  "redhat.telemetry.enabled": true,
+  "editor.stickyScroll.enabled": false,
+  "terminal.integrated.smoothScrolling": true,
+  "dart.warnWhenEditingFilesOutsideWorkspace": false,
+  "cmake.configureOnOpen": true,
+  "window.titleBarStyle": "native",
+  "workbench.editor.wrapTabs": true,
+  "cmake.cmakePath": "/opt/homebrew/bin/cmake",
+  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+  "apple-swift-format.path": "/opt/homebrew/bin/swift-format",
+  "editor.scrollbar.verticalScrollbarSize": 12,
+  "editor.stickyTabStops": true,
+  "typescript.implementationsCodeLens.enabled": true,
+  "liveServer.settings.host": "0.0.0.0",
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "terminal.integrated.gpuAcceleration": "on",
+  "git.autofetch": true,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "editor.accessibilitySupport": "on",
+  "vim.enableNeovim": true,
+  "vim.useSystemClipboard": true,
+  "terminal.integrated.fontFamily": "monaco nerd font",
+  "audioCues.volume": 0,
+  "errorLens.excludeBySource": [
+    "deno(deno-warn)",
+    "deno(redirect)"
+  ],
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "codeium.enableConfig": {
+    "*": true,
+    "ignore": true
+  },
+  "gitlens.views.experimental.multiSelect.enabled": true,
+  "git.confirmSync": false,
+  "errorLens.enabledInMergeConflict": false,
+  "dart.flutterSdkPaths": [
+    "/Users/d1y/fvm/default/bin/flutter"
+  ],
+  "symbols.hidesExplorerArrows": false,
+  "codeium.enableCodeLens": false,
+  "workbench.editor.tabSizingFixedMaxWidth": 120,
+  "editor.linkedEditing": true,
+  "git.openRepositoryInParentFolders": "never",
+  "workbench.editor.centeredLayoutFixedWidth": true,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "//": "Last update at 8/5/2023, 9:21:30 PM",
+    "*.asax": "$(capture).*.cs, $(capture).*.vb",
+    "*.ascx": "$(capture).*.cs, $(capture).*.vb",
+    "*.ashx": "$(capture).*.cs, $(capture).*.vb",
+    "*.aspx": "$(capture).*.cs, $(capture).*.vb",
+    "*.bloc.dart": "$(capture).event.dart, $(capture).state.dart",
+    "*.c": "$(capture).h",
+    "*.cc": "$(capture).hpp, $(capture).h, $(capture).hxx",
+    "*.cjs": "$(capture).cjs.map, $(capture).*.cjs, $(capture)_*.cjs",
+    "*.component.ts": "$(capture).component.html, $(capture).component.spec.ts, $(capture).component.css, $(capture).component.scss, $(capture).component.sass, $(capture).component.less",
+    "*.cpp": "$(capture).hpp, $(capture).h, $(capture).hxx",
+    "*.cs": "$(capture).*.cs",
+    "*.cshtml": "$(capture).cshtml.cs",
+    "*.csproj": "*.config, *proj.user, appsettings.*, bundleconfig.json",
+    "*.css": "$(capture).css.map, $(capture).*.css",
+    "*.cxx": "$(capture).hpp, $(capture).h, $(capture).hxx",
+    "*.dart": "$(capture).freezed.dart, $(capture).g.dart",
+    "*.ex": "$(capture).html.eex, $(capture).html.heex, $(capture).html.leex",
+    "*.go": "$(capture)_test.go",
+    "*.java": "$(capture).class",
+    "*.js": "$(capture).js.map, $(capture).*.js, $(capture)_*.js",
+    "*.jsx": "$(capture).js, $(capture).*.jsx, $(capture)_*.js, $(capture)_*.jsx",
+    "*.master": "$(capture).*.cs, $(capture).*.vb",
+    "*.mjs": "$(capture).mjs.map, $(capture).*.mjs, $(capture)_*.mjs",
+    "*.module.ts": "$(capture).resolver.ts, $(capture).controller.ts, $(capture).service.ts",
+    "*.mts": "$(capture).mts.map, $(capture).*.mts, $(capture)_*.mts",
+    "*.pubxml": "$(capture).pubxml.user",
+    "*.resx": "$(capture).*.resx, $(capture).designer.cs, $(capture).designer.vb",
+    "*.tex": "$(capture).acn, $(capture).acr, $(capture).alg, $(capture).aux, $(capture).bbl, $(capture).blg, $(capture).fdb_latexmk, $(capture).fls, $(capture).glg, $(capture).glo, $(capture).gls, $(capture).idx, $(capture).ind, $(capture).ist, $(capture).lof, $(capture).log, $(capture).lot, $(capture).out, $(capture).pdf, $(capture).synctex.gz, $(capture).toc, $(capture).xdv",
+    "*.ts": "$(capture).js, $(capture).d.ts.map, $(capture).*.ts, $(capture)_*.js, $(capture)_*.ts",
+    "*.tsx": "$(capture).ts, $(capture).*.tsx, $(capture)_*.ts, $(capture)_*.tsx",
+    "*.vbproj": "*.config, *proj.user, appsettings.*, bundleconfig.json",
+    "*.vue": "$(capture).*.ts, $(capture).*.js, $(capture).story.vue",
+    "*.xaml": "$(capture).xaml.cs",
+    "+layout.svelte": "+layout.ts,+layout.ts,+layout.js,+layout.server.ts,+layout.server.js,+layout.gql",
+    "+page.svelte": "+page.server.ts,+page.server.js,+page.ts,+page.js,+page.gql",
+    ".clang-tidy": ".clang-format, .clangd, compile_commands.json",
+    ".env": "*.env, .env.*, .envrc, env.d.ts",
+    ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
+    ".project": ".classpath",
+    "BUILD.bazel": "*.bzl, *.bazel, *.bazelrc, bazel.rc, .bazelignore, .bazelproject, WORKSPACE",
+    "CMakeLists.txt": "*.cmake, *.cmake.in, .cmake-format.yaml, CMakePresets.json",
+    "I*.cs": "$(capture).cs",
+    "Pipfile": ".editorconfig, .flake8, .isort.cfg, .python-version, Pipfile, Pipfile.lock, requirements*.in, requirements*.pip, requirements*.txt, tox.ini",
+    "artisan": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, server.php, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, webpack.mix.js, windi.config.*",
+    "astro.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "cargo.toml": ".clippy.toml, .rustfmt.toml, cargo.lock, clippy.toml, cross.toml, rust-toolchain.toml, rustfmt.toml",
+    "composer.json": ".php*.cache, composer.lock, phpunit.xml*, psalm*.xml",
+    "default.nix": "shell.nix",
+    "deno.json*": "*.env, .env.*, .envrc, api-extractor.json, deno.lock, env.d.ts, import-map.json, import_map.json, jsconfig.*, tsconfig.*, tsdoc.*",
+    "dockerfile": ".dockerignore, docker-compose.*, dockerfile*",
+    "flake.nix": "flake.lock",
+    "gatsby-config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, gatsby-browser.*, gatsby-node.*, gatsby-ssr.*, gatsby-transformer.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "gemfile": ".ruby-version, gemfile.lock",
+    "go.mod": ".air*, go.sum",
+    "go.work": "go.work.sum",
+    "hatch.toml": ".editorconfig, .flake8, .isort.cfg, .python-version, hatch.toml, requirements*.in, requirements*.pip, requirements*.txt, tox.ini",
+    "mix.exs": ".credo.exs, .dialyzer_ignore.exs, .formatter.exs, .iex.exs, .tool-versions, mix.lock",
+    "next.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, next-env.d.ts, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "nuxt.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .nuxtignore, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "package.json": ".browserslist*, .circleci*, .commitlint*, .cz-config.js, .czrc, .dlint.json, .dprint.json, .editorconfig, .eslint*, .firebase*, .flowconfig, .github*, .gitlab*, .gitpod*, .huskyrc*, .jslint*, .lintstagedrc*, .markdownlint*, .node-version, .nodemon*, .npm*, .nvmrc, .pm2*, .pnp.*, .pnpm*, .prettier*, .release-please*.json, .releaserc*, .sentry*, .simple-git-hooks*, .stackblitz*, .styleci*, .stylelint*, .tazerc*, .textlint*, .tool-versions, .travis*, .versionrc*, .vscode*, .watchman*, .xo-config*, .yamllint*, .yarnrc*, Procfile, apollo.config.*, appveyor*, azure-pipelines*, bower.json, build.config.*, commitlint*, crowdin*, dangerfile*, dlint.json, dprint.json, electron-builder.*, eslint*, firebase.json, grunt*, gulp*, jenkins*, lerna*, lint-staged*, nest-cli.*, netlify*, nodemon*, npm-shrinkwrap.json, nx.*, package-lock.json, package.nls*.json, phpcs.xml, pm2.*, pnpm*, prettier*, pullapprove*, pyrightconfig.json, release-please*.json, release-tasks.sh, release.config.*, renovate*, rollup.config.*, rspack*, simple-git-hooks*, stylelint*, tslint*, tsup.config.*, turbo*, typedoc*, unlighthouse*, vercel*, vetur.config.*, webpack*, workspace.json, xo.config.*, yarn*",
+    "pubspec.yaml": ".metadata, .packages, all_lint_rules.yaml, analysis_options.yaml, build.yaml, pubspec.lock, pubspec_overrides.yaml",
+    "pyproject.toml": ".editorconfig, .flake8, .isort.cfg, .pdm-python, .pdm.toml, .python-version, MANIFEST.in, Pipfile, Pipfile.lock, hatch.toml, pdm.lock, poetry.lock, pyproject.toml, requirements*.in, requirements*.pip, requirements*.txt, setup.cfg, setup.py, tox.ini",
+    "quasar.conf.js": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, quasar.extensions.json, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "readme*": "authors, backers*, changelog*, citation*, code_of_conduct*, codeowners, contributing*, contributors, copying, credits, governance.md, history.md, license*, maintainers, readme*, security.md, sponsors*",
+    "remix.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, remix.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "requirements.txt": ".editorconfig, .flake8, .isort.cfg, .python-version, requirements*.in, requirements*.pip, requirements*.txt, tox.ini",
+    "rush.json": ".browserslist*, .circleci*, .commitlint*, .cz-config.js, .czrc, .dlint.json, .dprint.json, .editorconfig, .eslint*, .firebase*, .flowconfig, .github*, .gitlab*, .gitpod*, .huskyrc*, .jslint*, .lintstagedrc*, .markdownlint*, .node-version, .nodemon*, .npm*, .nvmrc, .pm2*, .pnp.*, .pnpm*, .prettier*, .release-please*.json, .releaserc*, .sentry*, .simple-git-hooks*, .stackblitz*, .styleci*, .stylelint*, .tazerc*, .textlint*, .tool-versions, .travis*, .versionrc*, .vscode*, .watchman*, .xo-config*, .yamllint*, .yarnrc*, Procfile, apollo.config.*, appveyor*, azure-pipelines*, bower.json, build.config.*, commitlint*, crowdin*, dangerfile*, dlint.json, dprint.json, electron-builder.*, eslint*, firebase.json, grunt*, gulp*, jenkins*, lerna*, lint-staged*, nest-cli.*, netlify*, nodemon*, npm-shrinkwrap.json, nx.*, package-lock.json, package.nls*.json, phpcs.xml, pm2.*, pnpm*, prettier*, pullapprove*, pyrightconfig.json, release-please*.json, release-tasks.sh, release.config.*, renovate*, rollup.config.*, rspack*, simple-git-hooks*, stylelint*, tslint*, tsup.config.*, turbo*, typedoc*, unlighthouse*, vercel*, vetur.config.*, webpack*, workspace.json, xo.config.*, yarn*",
+    "setup.cfg": ".editorconfig, .flake8, .isort.cfg, .python-version, MANIFEST.in, requirements*.in, requirements*.pip, requirements*.txt, setup.cfg, tox.ini",
+    "setup.py": ".editorconfig, .flake8, .isort.cfg, .python-version, MANIFEST.in, requirements*.in, requirements*.pip, requirements*.txt, setup.cfg, setup.py, tox.ini",
+    "shims.d.ts": "*.d.ts",
+    "svelte.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, houdini.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, mdsvex.config.js, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vite.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "vite.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*",
+    "vue.config.*": "*.env, .babelrc*, .codecov, .cssnanorc*, .env.*, .envrc, .htmlnanorc*, .lighthouserc.*, .mocha*, .postcssrc*, .terserrc*, api-extractor.json, ava.config.*, babel.config.*, contentlayer.config.*, cssnano.config.*, cypress.*, env.d.ts, formkit.config.*, formulate.config.*, histoire.config.*, htmlnanorc.*, jasmine.*, jest.config.*, jsconfig.*, karma*, lighthouserc.*, playwright.config.*, postcss.config.*, puppeteer.config.*, rspack.config.*, svgo.config.*, tailwind.config.*, tsconfig.*, tsdoc.*, uno.config.*, unocss.config.*, vitest.config.*, webpack.config.*, windi.config.*"
+  },
+  "window.nativeTabs": true,
+  "editor.inlayHints.padding": true,
+  "editor.inlayHints.enabled": "onUnlessPressed",
+  "vue.inlayHints.missingProps": true,
+  "vue.inlayHints.optionsWrapper": true,
+  "vue.inlayHints.inlineHandlerLeading": true,
+  "audioCues.noInlayHints": "on",
+  "editor.tabCompletion": "on",
+  "editor.mouseWheelZoom": true,
+  "editor.guides.bracketPairs": true,
+  "workbench.productIconTheme": "bongocat",
+  "gitlens.statusBar.format": "${author}, ${agoOrDate} • ${message}",
+  "explorer.confirmDelete": false,
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "terminal.integrated.fontSize": 12,
+  "window.menuBarVisibility": "toggle",
+  "search.showLineNumbers": true,
+  "terminal.integrated.tabFocusMode": false,
+  "window.zoomLevel": 1,
+  "git.terminalGitEditor": true
+}
