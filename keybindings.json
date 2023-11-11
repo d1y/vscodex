@@ -16,31 +16,31 @@
     "command": "workbench.action.navigateDown"
   },
 	// commit
-	{
-		"key": "ctrl+enter",
-		"command": "git.commitMessageAccept",
-		"when": "editorFocus && !isInDiffEditor && resourceDirname =~ /.git$/ && resourceFilename == COMMIT_EDITMSG"
-	},
+	// {
+	// 	"key": "ctrl+enter",
+	// 	"command": "git.commitMessageAccept",
+	// 	"when": "editorFocus && !isInDiffEditor && resourceDirname =~ /.git$/ && resourceFilename == COMMIT_EDITMSG"
+	// },
   // -------------------------
   {
     "key": "alt+n",
     "command": "workbench.action.compareEditor.nextChange",
-    "when": "editorTextFocus && !suggestWidgetVisible && textCompareEditorActive"
+    "when": "editorTextFocus && !suggestWidgetVisible && textCompareEditorActive",
   },
   {
     "key": "alt+shift+n",
     "command": "workbench.action.compareEditor.previousChange",
-    "when": "editorTextFocus && !suggestWidgetVisible && textCompareEditorActive"
+    "when": "editorTextFocus && !suggestWidgetVisible && textCompareEditorActive",
   },
   {
     "key": "alt+n",
     "command": "workbench.action.editor.nextChange",
-    "when": "editorTextFocus && !suggestWidgetVisible && !textCompareEditorActive"
+    "when": "editorTextFocus && !suggestWidgetVisible && !textCompareEditorActive",
   },
   {
     "key": "alt+shift+n",
     "command": "workbench.action.editor.previousChange",
-    "when": "editorTextFocus && !suggestWidgetVisible && !textCompareEditorActive"
+    "when": "editorTextFocus && !suggestWidgetVisible && !textCompareEditorActive",
   },
   // -------------------------
 
@@ -60,12 +60,6 @@
 		"command": "explorer.newFolder",
 		"when": " explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus "
 	},
-	// 刷新资源管理器
-	// {
-	// 	"key": "a",
-	// 	"command": "workbench.files.action.refreshFilesExplorer",
-	// 	"when": " explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus "
-	// },
 	// 重命名文件或目录
 	{
 		"key": "r",
@@ -95,5 +89,13 @@
 		"key": "p",
 		"command": "filesExplorer.paste",
 		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
-	}
+	},
+	{
+		"key": "ctrl+'",
+		"command": "workbench.action.toggleScreencastMode"
+	},
+	{
+		"key": "cmd+g cmd+g",
+		"command": "git.commitStaged"
+	},
 ]
